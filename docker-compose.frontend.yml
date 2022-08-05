@@ -73,6 +73,9 @@ services:
       - ./.vols/kpi_media:/srv/src/kpi/media
       # Allow access to KoBoCAT media uploads within KPI
       - ./.vols/kobocat_media_uploads:/srv/src/kobocat/media
+      # Adaptaciones en el logotipo del login
+      - ./kpi/registration.html:/srv/src/kpi/kpi/templates/registration.html
+    
     restart: always
     networks:
       kobo-fe-network:
@@ -116,10 +119,11 @@ services:
     restart: always
     volumes:
       - ../kobo-env/enketo_express/config.json:/srv/src/enketo_express/config/config.json
-      # Override Enketo Express icons.
-      - ./enketo_express/css:/srv/src/enketo_express/public/css
+        # Override Enketo Express icons.
       - ./enketo_express/favicon.ico:/srv/src/enketo_express/public/images/favicon.ico:rw
       - ./enketo_express/icon_180x180.png:/srv/src/enketo_express/public/images/icon_180x180.png:rw
+      # Para cambiar el tamaño del logotipo dentro del formulario
+      - ./enketo_express/css:/srv/src/enketo_express/public/css
     networks:
       kobo-fe-network:
         aliases:
