@@ -2928,7 +2928,7 @@ body {
   justify-content: flex-end;
   position: absolute;
   left: 0;
-  top: -76px;
+  top: -90px;
   width: 100%;
   min-height: 69px;
   padding: 16px 0; }
@@ -7667,8 +7667,8 @@ input[type="checkbox"] {
       display: flex;
       align-items: flex-end; }
     .form-header__branding img {
-      max-height: 60px;
-      max-width: 260px; }
+      max-height: 100px;
+      max-width: 360px; }
     .form-header__branding span {
       display: inline-block;
       color: #444444;
