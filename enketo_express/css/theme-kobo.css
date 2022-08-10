@@ -3748,7 +3748,8 @@ legend .required {
       .form-header .form-language-selector span {
         display: none; }
   #form-title {
-    padding-top: 25px; } }
+    padding-top: 25px;
+   } }
 
 @media screen and (max-width: 600px) {
   body {
