@@ -5,7 +5,7 @@ version: '3'
 
 services:
   kobocat:
-    image: kobotoolbox/kobocat:2.022.16
+    image: kobotoolbox/kobocat:2.022.24a
     hostname: kobocat
     env_file:
       - ../kobo-env/envfile.txt
@@ -43,7 +43,7 @@ services:
           - kobocat.internal
 
   kpi:
-    image: kobotoolbox/kpi:2.022.16b
+    image: kobotoolbox/kpi:2.022.24e
     hostname: kpi
     env_file:
       - ../kobo-env/envfile.txt
@@ -111,7 +111,7 @@ services:
           - nginx.internal
 
   enketo_express:
-    image: kobotoolbox/enketo-express-extra-widgets:3.0.5
+    image: kobotoolbox/enketo-express-extra-widgets:4.1.1__memory-leak-hotfix
     env_file:
       - ../kobo-env/envfile.txt
     environment:
